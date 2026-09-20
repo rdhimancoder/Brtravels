@@ -1,0 +1,1175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Brotherss Travels — Holidays Across India, Planned by Real Travellers</title>
+<meta name="description" content="Brotherss Travels designs curated domestic and international holiday packages, backed by fourteen years of on-ground experience across India.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<style>
+:root{
+--navy:#12213A;
+--navy-2:#1A2F52;
+--navy-3:#223a64;
+--marigold:#E8A33D;
+--marigold-dark:#C97F1E;
+--teal:#1F6E63;
+--clay:#B54B36;
+--sand:#F3ECDD;
+--sand-2:#ECE2CC;
+--ink:#1B1B1B;
+--muted:#5B6472;
+--muted-light:#c8cedb;
+--white:#FFFFFF;
+--line:rgba(18,33,58,0.12);
+--line-light:rgba(255,255,255,0.16);
+--radius-sm:6px;
+--radius-md:16px;
+--shadow-1:0 24px 48px -24px rgba(18,33,58,0.35);
+--shadow-2:0 16px 32px -18px rgba(18,33,58,0.28);
+--font-d:'Fraunces',serif;
+--font-b:'Work Sans',sans-serif;
+--container-w:1220px;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;scroll-padding-top:84px;}
+body{
+margin:0;
+font-family:var(--font-b);
+color:var(--ink);
+background:var(--white);
+line-height:1.6;
+-webkit-font-smoothing:antialiased;
+}
+h1,h2,h3,h4{
+font-family:var(--font-d);
+color:var(--navy);
+margin:0;
+line-height:1.15;
+font-weight:600;
+}
+p{margin:0;}
+a{text-decoration:none;color:inherit;}
+img{max-width:100%;display:block;}
+button{font-family:var(--font-b);cursor:pointer;}
+.wrap{max-width:var(--container-w);margin:0 auto;padding:0 28px;}
+.kicker{
+font-family:var(--font-d);
+font-style:italic;
+color:var(--marigold-dark);
+font-size:1.02rem;
+margin-bottom:10px;
+display:inline-block;
+}
+.section-head{max-width:640px;margin-bottom:52px;}
+.section-head.center{margin-left:auto;margin-right:auto;text-align:center;}
+.section-head h2{font-size:clamp(1.9rem,3.2vw,2.7rem);margin-top:4px;}
+.section-head p.lead{margin-top:16px;color:var(--muted);font-size:1.05rem;max-width:56ch;}
+.section-head.center p.lead{margin-left:auto;margin-right:auto;}
+section{position:relative;}
+.btn-mgd{
+background:var(--marigold);
+color:var(--navy);
+border:none;
+padding:14px 30px;
+border-radius:999px;
+font-weight:600;
+font-size:0.98rem;
+display:inline-flex;
+align-items:center;
+gap:8px;
+transition:transform .18s ease,box-shadow .18s ease,background .18s ease;
+}
+.btn-mgd:hover{background:var(--marigold-dark);transform:translateY(-2px);color:var(--navy);box-shadow:0 12px 24px -10px rgba(201,127,30,0.55);}
+.btn-outline-navy{
+background:transparent;
+border:1.5px solid var(--navy);
+color:var(--navy);
+padding:12.5px 28px;
+border-radius:999px;
+font-weight:600;
+font-size:0.98rem;
+transition:all .18s ease;
+display:inline-flex;
+align-items:center;
+gap:8px;
+}
+.btn-outline-navy:hover{background:var(--navy);color:var(--white);}
+.btn-outline-light{
+background:transparent;
+border:1.5px solid rgba(255,255,255,0.55);
+color:var(--white);
+padding:12.5px 28px;
+border-radius:999px;
+font-weight:600;
+font-size:0.98rem;
+transition:all .18s ease;
+display:inline-flex;
+align-items:center;
+gap:8px;
+}
+.btn-outline-light:hover{background:var(--white);color:var(--navy);border-color:var(--white);}
+#preloader{
+position:fixed;inset:0;background:var(--navy);z-index:2000;
+display:flex;align-items:center;justify-content:center;
+transition:opacity .5s ease,visibility .5s ease;
+}
+#preloader.done{opacity:0;visibility:hidden;}
+.pl-mark{
+font-family:var(--font-d);color:var(--sand);font-size:1.6rem;font-style:italic;
+display:flex;align-items:center;gap:14px;
+}
+.pl-dot{width:10px;height:10px;border-radius:50%;background:var(--marigold);animation:pulse 1s ease-in-out infinite;}
+@keyframes pulse{0%,100%{transform:scale(1);opacity:1;}50%{transform:scale(1.6);opacity:.4;}}
+.navbar-custom{
+position:fixed;top:0;left:0;right:0;z-index:1000;
+padding:18px 0;
+transition:background .3s ease,padding .3s ease,box-shadow .3s ease;
+}
+.navbar-custom.scrolled{
+background:rgba(18,33,58,0.96);
+padding:12px 0;
+box-shadow:0 10px 30px -18px rgba(0,0,0,0.6);
+backdrop-filter:blur(6px);
+}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;}
+.brand{
+font-family:var(--font-d);font-weight:600;font-size:1.5rem;color:var(--white);
+display:flex;align-items:center;gap:10px;letter-spacing:.2px;
+}
+.brand i{color:var(--marigold);}
+.nav-links{display:flex;align-items:center;gap:1.55rem;list-style:none;margin:0;padding:0;}
+.nav-links a{
+color:var(--muted-light);font-size:.94rem;font-weight:500;
+position:relative;padding:6px 0;transition:color .2s ease;
+}
+.nav-links a::after{
+content:"";position:absolute;left:0;bottom:0;height:2px;width:0;
+background:var(--marigold);transition:width .25s ease;
+}
+.nav-links a:hover,.nav-links a.active{color:var(--white);}
+.nav-links a:hover::after,.nav-links a.active::after{width:100%;}
+.nav-cta{
+background:var(--marigold);color:var(--navy)!important;padding:10px 22px;border-radius:999px;
+font-weight:600;
+}
+.nav-cta::after{display:none;}
+.nav-cta:hover{background:var(--white);}
+.navToggler{
+display:none;background:transparent;border:1px solid var(--line-light);
+color:var(--white);width:42px;height:42px;border-radius:10px;font-size:1.1rem;
+}
+#mobileMenu{
+display:none;position:fixed;top:0;right:0;bottom:0;width:min(320px,84vw);
+background:var(--navy-2);z-index:1100;padding:100px 28px 28px;
+transform:translateX(100%);transition:transform .35s ease;
+box-shadow:-20px 0 50px rgba(0,0,0,.4);
+}
+#mobileMenu.open{transform:translateX(0);}
+#mobileMenu ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:6px;}
+#mobileMenu a{
+color:var(--sand);font-size:1.05rem;padding:13px 4px;border-bottom:1px solid var(--line-light);display:block;
+}
+#menuClose{
+position:absolute;top:26px;right:26px;background:transparent;border:none;color:var(--white);font-size:1.4rem;
+}
+#menuOverlay{
+position:fixed;inset:0;background:rgba(10,16,28,.55);z-index:1050;opacity:0;visibility:hidden;transition:opacity .3s ease;
+}
+#menuOverlay.open{opacity:1;visibility:visible;}
+.hero{
+background:linear-gradient(190deg,var(--navy) 0%,var(--navy-2) 62%,var(--navy-3) 100%);
+padding:168px 0 110px;
+position:relative;overflow:hidden;
+}
+.hero-map{position:absolute;top:0;right:-6%;width:56%;height:100%;opacity:.9;pointer-events:none;}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center;position:relative;z-index:2;}
+.hero-eyebrow{
+display:inline-flex;align-items:center;gap:10px;color:var(--sand);font-size:.9rem;
+border:1px solid var(--line-light);padding:8px 16px 8px 8px;border-radius:999px;margin-bottom:26px;
+}
+.hero-eyebrow span.pip{
+background:var(--marigold);color:var(--navy);border-radius:999px;padding:3px 10px;font-weight:700;font-size:.78rem;
+}
+.hero h1{
+color:var(--white);font-size:clamp(2.3rem,4.6vw,3.65rem);font-weight:600;max-width:15ch;
+}
+.hero p.sub{color:var(--muted-light);font-size:1.14rem;max-width:48ch;margin-top:22px;}
+.hero-actions{display:flex;gap:16px;margin-top:34px;flex-wrap:wrap;}
+.trust-row{display:flex;gap:34px;margin-top:52px;flex-wrap:wrap;}
+.trust-row div{color:var(--sand);}
+.trust-row strong{display:block;font-family:var(--font-d);color:var(--white);font-size:1.5rem;}
+.trust-row span{font-size:.86rem;color:var(--muted-light);}
+.enquiry-card{
+background:var(--white);border-radius:20px;padding:34px 30px;box-shadow:var(--shadow-1);
+position:relative;z-index:3;
+}
+.enquiry-card h3{font-size:1.35rem;margin-bottom:6px;}
+.enquiry-card p{color:var(--muted);font-size:.92rem;margin-bottom:22px;}
+.enquiry-card label{font-size:.82rem;font-weight:600;color:var(--navy);display:block;margin-bottom:6px;}
+.enquiry-card .fld{margin-bottom:16px;}
+.enquiry-card select,.enquiry-card input{
+width:100%;padding:12px 14px;border-radius:10px;border:1.4px solid var(--line);
+font-family:var(--font-b);font-size:.95rem;background:var(--sand);color:var(--ink);
+}
+.enquiry-card select:focus,.enquiry-card input:focus{outline:2px solid var(--marigold);outline-offset:1px;}
+.enquiry-card button{width:100%;justify-content:center;margin-top:6px;border:none;}
+.band-sand{background:var(--sand);}
+.band-navy{background:var(--navy);}
+.band-navy h2,.band-navy h3,.band-navy h4{color:var(--white);}
+.band-navy .kicker{color:var(--marigold);}
+.py-sect{padding:110px 0;}
+@media(max-width:768px){.py-sect{padding:76px 0;}}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start;}
+.about-collage{position:relative;height:430px;}
+.about-collage img{
+position:absolute;border-radius:18px;box-shadow:var(--shadow-2);object-fit:cover;
+}
+.about-collage img:first-child{width:72%;height:78%;top:0;left:0;z-index:2;}
+.about-collage img:last-child{width:55%;height:52%;bottom:0;right:0;z-index:3;border:6px solid var(--white);}
+.badge-float{
+position:absolute;bottom:-22px;left:14px;background:var(--marigold);color:var(--navy);
+padding:16px 20px;border-radius:16px;box-shadow:var(--shadow-2);z-index:4;font-family:var(--font-d);
+}
+.badge-float strong{display:block;font-size:1.5rem;}
+.badge-float span{font-size:.78rem;font-weight:600;}
+.stats-row{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:46px;padding-top:38px;border-top:1px solid var(--line);}
+.stat strong{
+font-family:var(--font-d);font-size:2.15rem;color:var(--navy);display:block;
+}
+.stat span{color:var(--muted);font-size:.86rem;}
+.steps{margin-top:56px;}
+.steps-list{display:grid;grid-template-columns:repeat(4,1fr);gap:26px;}
+.step{border-left:2px solid var(--line);padding-left:20px;}
+.step .num{font-family:var(--font-d);color:var(--marigold-dark);font-size:1.5rem;font-style:italic;}
+.step h4{font-size:1.08rem;margin-top:8px;}
+.step p{color:var(--muted);font-size:.92rem;margin-top:8px;}
+.dest-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:26px;}
+.dest-card{
+position:relative;border-radius:4px;overflow:hidden;height:340px;
+clip-path:polygon(0 0,100% 0,100% 92%,88% 100%,0 100%);
+box-shadow:var(--shadow-2);
+}
+.dest-card img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease;}
+.dest-card:hover img{transform:scale(1.08);}
+.dest-card .overlay{
+position:absolute;inset:0;background:linear-gradient(0deg,rgba(18,33,58,.92) 8%,rgba(18,33,58,.15) 55%,rgba(18,33,58,0) 72%);
+}
+.dest-card .info{position:absolute;left:0;right:0;bottom:0;padding:22px;color:var(--white);}
+.dest-card .info span.tag{color:var(--marigold);font-size:.78rem;font-weight:600;}
+.dest-card .info h3{color:var(--white);font-size:1.28rem;margin-top:4px;}
+.dest-card .info p{font-size:.86rem;color:var(--muted-light);margin-top:8px;max-width:32ch;}
+.dest-card .price{
+position:absolute;top:18px;right:18px;background:var(--white);color:var(--navy);
+padding:7px 13px;border-radius:999px;font-size:.78rem;font-weight:700;
+}
+.filters{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:44px;}
+.filters button{
+background:transparent;border:1.4px solid var(--line);color:var(--muted);
+padding:9px 20px;border-radius:999px;font-size:.9rem;font-weight:600;transition:all .2s ease;
+}
+.filters button.active,.filters button:hover{background:var(--navy);border-color:var(--navy);color:var(--white);}
+.pkg-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;}
+.pkg-card{
+background:var(--white);border:1px solid var(--line);border-radius:var(--radius-md);overflow:hidden;
+box-shadow:var(--shadow-2);transition:opacity .25s ease,transform .25s ease;
+}
+.pkg-card.is-hidden{display:none;}
+.pkg-img{height:190px;position:relative;overflow:hidden;}
+.pkg-img img{width:100%;height:100%;object-fit:cover;}
+.pkg-img .cat{
+position:absolute;top:14px;left:14px;background:var(--teal);color:var(--white);
+padding:5px 13px;border-radius:999px;font-size:.74rem;font-weight:700;
+}
+.pkg-body{padding:24px 26px 26px;position:relative;}
+.pkg-body h3{font-size:1.25rem;}
+.pkg-route{color:var(--muted);font-size:.86rem;margin-top:6px;}
+.ticket-cut{
+position:relative;margin:18px 0;border-top:1.5px dashed var(--line);
+}
+.ticket-cut::before,.ticket-cut::after{
+content:"";position:absolute;top:-9px;width:18px;height:18px;border-radius:50%;background:var(--white);
+}
+.ticket-cut::before{left:-26px;}
+.ticket-cut::after{right:-26px;}
+.pkg-meta{display:flex;justify-content:space-between;align-items:center;font-size:.85rem;color:var(--muted);}
+.pkg-meta i{color:var(--marigold-dark);}
+.pkg-foot{display:flex;justify-content:space-between;align-items:center;margin-top:18px;}
+.pkg-price strong{font-family:var(--font-d);font-size:1.4rem;color:var(--navy);}
+.pkg-price span{display:block;font-size:.74rem;color:var(--muted);}
+.pkg-book{
+background:var(--navy);color:var(--white);border:none;padding:10px 20px;border-radius:999px;
+font-weight:600;font-size:.86rem;
+}
+.pkg-book:hover{background:var(--marigold-dark);}
+.why-grid{display:grid;grid-template-columns:1fr 1.4fr;gap:60px;}
+.why-intro h2{font-size:clamp(1.8rem,3vw,2.5rem);}
+.why-intro p{color:var(--muted-light);margin-top:18px;max-width:34ch;}
+.why-list{display:grid;grid-template-columns:1fr 1fr;gap:0;}
+.why-item{
+padding:26px 20px 26px 0;border-bottom:1px solid var(--line-light);display:flex;gap:18px;
+}
+.why-item:nth-child(odd){border-right:1px solid var(--line-light);padding-right:26px;}
+.why-item i{color:var(--marigold);font-size:1.3rem;margin-top:3px;}
+.why-item h4{color:var(--white);font-size:1.05rem;}
+.why-item p{color:var(--muted-light);font-size:.9rem;margin-top:6px;}
+.gallery-grid{
+display:grid;grid-template-columns:repeat(4,1fr);grid-template-rows:180px 180px;gap:16px;
+}
+.g-item{position:relative;border-radius:14px;overflow:hidden;cursor:pointer;}
+.g-item img{width:100%;height:100%;object-fit:cover;transition:transform .4s ease;}
+.g-item:hover img{transform:scale(1.1);}
+.g-item .cap{
+position:absolute;left:0;right:0;bottom:0;padding:14px 16px;color:var(--white);font-size:.82rem;font-weight:600;
+background:linear-gradient(0deg,rgba(18,33,58,.85),transparent);
+}
+.g-item .zoom{
+position:absolute;top:12px;right:12px;width:34px;height:34px;border-radius:50%;
+background:rgba(255,255,255,.9);display:flex;align-items:center;justify-content:center;color:var(--navy);opacity:0;transition:opacity .3s ease;
+}
+.g-item:hover .zoom{opacity:1;}
+.g1{grid-column:span 2;grid-row:span 2;}
+.g2{grid-column:span 1;grid-row:span 1;}
+.g5{grid-column:span 1;grid-row:span 2;}
+.testi-wrap{max-width:760px;margin:0 auto;text-align:center;position:relative;}
+.testi-quote{color:var(--marigold);font-size:3.4rem;font-family:var(--font-d);line-height:1;}
+.testi-slide{display:none;}
+.testi-slide.active{display:block;animation:fadein .5s ease;}
+@keyframes fadein{from{opacity:0;transform:translateY(8px);}to{opacity:1;transform:translateY(0);}}
+.testi-text{
+color:var(--white);font-family:var(--font-d);font-size:clamp(1.2rem,2.4vw,1.6rem);font-weight:400;line-height:1.5;
+}
+.testi-person{display:flex;align-items:center;justify-content:center;gap:14px;margin-top:30px;}
+.testi-person img{width:52px;height:52px;border-radius:50%;object-fit:cover;border:2px solid var(--marigold);}
+.testi-person div{text-align:left;}
+.testi-person strong{color:var(--white);display:block;font-size:.95rem;}
+.testi-person span{color:var(--muted-light);font-size:.82rem;}
+.testi-stars{color:var(--marigold);margin-top:4px;font-size:.82rem;}
+.testi-nav{display:flex;justify-content:center;gap:22px;margin-top:38px;align-items:center;}
+.testi-nav button{
+background:transparent;border:1px solid var(--line-light);color:var(--white);width:42px;height:42px;border-radius:50%;
+}
+.testi-nav button:hover{background:var(--marigold);border-color:var(--marigold);color:var(--navy);}
+.testi-dots{display:flex;gap:8px;}
+.testi-dots button{width:8px;height:8px;border-radius:50%;background:var(--line-light);border:none;padding:0;}
+.testi-dots button.active{background:var(--marigold);width:22px;border-radius:6px;}
+.blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;}
+.blog-card{border:1px solid var(--line);border-radius:var(--radius-md);overflow:hidden;background:var(--white);box-shadow:var(--shadow-2);}
+.blog-img{height:200px;overflow:hidden;}
+.blog-img img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease;}
+.blog-card:hover .blog-img img{transform:scale(1.06);}
+.blog-body{padding:24px 26px 28px;}
+.blog-tag{color:var(--teal);font-weight:700;font-size:.76rem;}
+.blog-body h3{font-size:1.16rem;margin-top:10px;}
+.blog-date{color:var(--muted);font-size:.82rem;margin-top:10px;}
+.blog-excerpt{color:var(--muted);font-size:.92rem;margin-top:12px;}
+.blog-more{
+display:inline-block;margin-top:16px;color:var(--navy);font-weight:600;font-size:.9rem;border-bottom:2px solid var(--marigold);
+}
+.faq-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:60px;}
+.faq-side p{color:var(--muted);margin-top:16px;max-width:36ch;}
+.accordion-item{border:none;border-bottom:1px solid var(--line);background:transparent;}
+.accordion-button{
+font-family:var(--font-d);color:var(--navy);font-size:1.08rem;font-weight:600;padding:22px 4px;background:transparent;box-shadow:none;
+}
+.accordion-button:not(.collapsed){color:var(--marigold-dark);background:transparent;box-shadow:none;}
+.accordion-button::after{filter:sepia(1) saturate(3) hue-rotate(0deg);}
+.accordion-body{color:var(--muted);padding:0 4px 24px;font-size:.95rem;}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;}
+.contact-card{background:var(--white);border-radius:20px;padding:38px 34px;box-shadow:var(--shadow-1);}
+.contact-card .fld{margin-bottom:18px;}
+.contact-card label{font-size:.84rem;font-weight:600;color:var(--navy);display:block;margin-bottom:7px;}
+.contact-card input,.contact-card select,.contact-card textarea{
+width:100%;padding:13px 15px;border-radius:10px;border:1.4px solid var(--line);
+font-family:var(--font-b);font-size:.95rem;background:var(--sand);
+}
+.contact-card input.invalid,.contact-card textarea.invalid{border-color:var(--clay);}
+.contact-card textarea{resize:vertical;min-height:100px;}
+.field-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+#formSuccess{
+display:none;background:rgba(31,110,99,.12);border:1px solid var(--teal);color:var(--teal);
+padding:14px 18px;border-radius:12px;margin-bottom:18px;font-size:.9rem;font-weight:600;
+}
+#formSuccess.show{display:block;}
+.info-list{list-style:none;margin:26px 0 0;padding:0;display:flex;flex-direction:column;gap:20px;}
+.info-list li{display:flex;gap:16px;color:var(--muted-light);}
+.info-list i{color:var(--marigold);font-size:1.15rem;margin-top:3px;}
+.info-list strong{display:block;color:var(--white);font-size:.95rem;}
+.map-frame{border-radius:16px;overflow:hidden;margin-top:26px;border:1px solid var(--line-light);}
+.map-frame iframe{width:100%;height:220px;border:0;display:block;}
+footer{background:var(--navy-2);padding:80px 0 26px;}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:44px;}
+.foot-brand p{color:var(--muted-light);margin-top:16px;font-size:.92rem;max-width:32ch;}
+.foot-social{display:flex;gap:12px;margin-top:22px;}
+.foot-social a{
+width:38px;height:38px;border-radius:50%;border:1px solid var(--line-light);color:var(--white);
+display:flex;align-items:center;justify-content:center;transition:all .2s ease;
+}
+.foot-social a:hover{background:var(--marigold);border-color:var(--marigold);color:var(--navy);}
+footer h4{color:var(--white);font-size:1rem;margin-bottom:20px;}
+.foot-links{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px;}
+.foot-links a{color:var(--muted-light);font-size:.92rem;}
+.foot-links a:hover{color:var(--marigold);}
+.foot-news p{color:var(--muted-light);font-size:.9rem;margin-bottom:14px;}
+.news-form{display:flex;gap:0;border:1px solid var(--line-light);border-radius:999px;padding:5px;}
+.news-form input{
+flex:1;background:transparent;border:none;padding:8px 14px;color:var(--white);font-size:.88rem;
+}
+.news-form input:focus{outline:none;}
+.news-form input::placeholder{color:var(--muted-light);}
+.news-form button{background:var(--marigold);color:var(--navy);border:none;border-radius:999px;padding:8px 16px;font-weight:700;}
+#newsMsg{color:var(--marigold);font-size:.82rem;margin-top:10px;display:none;}
+.foot-bottom{
+border-top:1px solid var(--line-light);margin-top:56px;padding-top:26px;
+display:flex;justify-content:space-between;color:var(--muted-light);font-size:.84rem;flex-wrap:wrap;gap:10px;
+}
+#backToTop{
+position:fixed;bottom:28px;right:28px;width:48px;height:48px;border-radius:50%;
+background:var(--marigold);color:var(--navy);border:none;font-size:1.1rem;box-shadow:var(--shadow-2);
+opacity:0;visibility:hidden;transform:translateY(10px);transition:all .3s ease;z-index:900;
+}
+#backToTop.show{opacity:1;visibility:visible;transform:translateY(0);}
+.counter-wrap{display:contents;}
+@media(max-width:1080px){
+.hero-grid,.about-grid,.contact-grid{grid-template-columns:1fr;}
+.dest-grid{grid-template-columns:repeat(2,1fr);}
+.pkg-grid,.blog-grid{grid-template-columns:repeat(2,1fr);}
+.stats-row,.steps-list{grid-template-columns:repeat(2,1fr);}
+.why-grid{grid-template-columns:1fr;}
+.why-list{grid-template-columns:1fr;}
+.why-item:nth-child(odd){border-right:none;padding-right:0;}
+.faq-grid{grid-template-columns:1fr;}
+.gallery-grid{grid-template-columns:repeat(2,1fr);grid-template-rows:auto;}
+.g1{grid-column:span 2;grid-row:auto;height:260px;}
+.g-item{height:180px;}
+}
+@media(max-width:860px){
+.nav-links{display:none;}
+.navToggler{display:flex;align-items:center;justify-content:center;}
+.hero{padding-top:132px;}
+}
+@media(max-width:640px){
+.dest-grid,.pkg-grid,.blog-grid,.stats-row,.steps-list{grid-template-columns:1fr;}
+.field-row{grid-template-columns:1fr;}
+.foot-grid{grid-template-columns:1fr 1fr;}
+.gallery-grid{grid-template-columns:1fr;}
+.g1{grid-column:auto;}
+}
+@media(prefers-reduced-motion:reduce){
+*{animation-duration:.001ms!important;transition-duration:.001ms!important;scroll-behavior:auto!important;}
+}
+</style>
+</head>
+<body>
+<div id="preloader"><div class="pl-mark"><span>Brotherss Travels</span><span class="pl-dot"></span></div></div>
+
+<div id="menuOverlay"></div>
+<div id="mobileMenu">
+<button id="menuClose"><i class="fa-solid fa-xmark"></i></button>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#destinations">Destinations</a></li>
+<li><a href="#packages">Packages</a></li>
+<li><a href="#why-us">Why Us</a></li>
+<li><a href="#gallery">Gallery</a></li>
+<li><a href="#testimonials">Reviews</a></li>
+<li><a href="#blog">Blog</a></li>
+<li><a href="#faq">FAQ</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</div>
+
+<nav class="navbar-custom" id="mainNav">
+<div class="wrap nav-inner">
+<a href="#home" class="brand"><i class="fa-solid fa-compass"></i>Brotherss Travels</a>
+<ul class="nav-links">
+<li><a href="#home" class="active">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#destinations">Destinations</a></li>
+<li><a href="#packages">Packages</a></li>
+<li><a href="#why-us">Why Us</a></li>
+<li><a href="#gallery">Gallery</a></li>
+<li><a href="#testimonials">Reviews</a></li>
+<li><a href="#blog">Blog</a></li>
+<li><a href="#faq">FAQ</a></li>
+<li><a href="#contact" class="nav-cta">Plan My Trip</a></li>
+</ul>
+<button class="navToggler" id="menuOpen"><i class="fa-solid fa-bars"></i></button>
+</div>
+</nav>
+
+<section class="hero" id="home">
+<svg class="hero-map" viewBox="0 0 500 600" xmlns="http://www.w3.org/2000/svg">
+<path d="M60 90 Q 180 40 260 130 T 420 220 Q 380 320 300 360 T 200 480 Q 150 520 90 500" fill="none" stroke="#E8A33D" stroke-width="2" stroke-dasharray="6 8" opacity="0.55"/>
+<circle cx="60" cy="90" r="6" fill="#E8A33D"/>
+<circle cx="260" cy="130" r="6" fill="#F3ECDD"/>
+<circle cx="420" cy="220" r="6" fill="#E8A33D"/>
+<circle cx="300" cy="360" r="6" fill="#F3ECDD"/>
+<circle cx="200" cy="480" r="6" fill="#E8A33D"/>
+<circle cx="90" cy="500" r="6" fill="#F3ECDD"/>
+</svg>
+<div class="wrap">
+<div class="hero-grid">
+<div>
+<div class="hero-eyebrow"><span class="pip">Since 2011</span> Holiday planning, run by people who've actually been there</div>
+<h1>Fourteen years of showing India to travellers who trust us with their time off</h1>
+<p class="sub">Brotherss Travels puts together domestic and international holiday packages built around your dates, your budget and the pace you actually want to travel at — not a template.</p>
+<div class="hero-actions">
+<a href="#packages" class="btn-mgd"><i class="fa-solid fa-suitcase-rolling"></i>See tour packages</a>
+<a href="#contact" class="btn-outline-light"><i class="fa-regular fa-comment-dots"></i>Talk to a planner</a>
+</div>
+<div class="trust-row">
+<div><strong data-count="25000" data-suffix="+">0</strong><span>Travellers hosted</span></div>
+<div><strong data-count="120" data-suffix="+">0</strong><span>Destinations covered</span></div>
+<div><strong data-count="4.8" data-decimals="1">0</strong><span>Average rating</span></div>
+</div>
+</div>
+<div class="enquiry-card">
+<h3>Get a free quote</h3>
+<p>Tell us the basics, we'll shape a plan within a day.</p>
+<form id="heroForm">
+<div class="fld">
+<label for="heroDest">Where to</label>
+<select id="heroDest">
+<option value="">Choose a destination</option>
+<option>Rajasthan</option>
+<option>Kerala</option>
+<option>Goa</option>
+<option>Himachal Pradesh</option>
+<option>Kashmir</option>
+<option>Uttarakhand</option>
+<option>Andaman Islands</option>
+<option>Tamil Nadu</option>
+<option>International</option>
+</select>
+</div>
+<div class="fld">
+<label for="heroDate">Travel month</label>
+<input type="month" id="heroDate">
+</div>
+<div class="fld">
+<label for="heroGuests">Travellers</label>
+<input type="number" id="heroGuests" min="1" value="2">
+</div>
+<button type="submit" class="btn-mgd"><i class="fa-solid fa-paper-plane"></i>Send enquiry</button>
+</form>
+</div>
+</div>
+</div>
+</section>
+
+<section class="py-sect" id="about">
+<div class="wrap">
+<div class="about-grid">
+<div class="about-collage">
+<img src="https://picsum.photos/seed/brotherssabout1/560/460" alt="Travellers on a guided tour">
+<img src="https://picsum.photos/seed/brotherssabout2/420/340" alt="Local guide with a small group">
+<div class="badge-float"><strong>14+</strong><span>Years on the road</span></div>
+</div>
+<div>
+<span class="kicker">How we got here</span>
+<h2>Started by two brothers who couldn't stop planning other people's holidays</h2>
+<p class="lead">What began as a small desk booking Rajasthan road trips for friends turned into a full holiday planning studio. We still keep every itinerary personal — no two travellers get the same plan, even for the same destination.</p>
+<div class="stats-row">
+<div class="stat"><strong data-count="14" data-suffix="+">0</strong><span>Years running</span></div>
+<div class="stat"><strong data-count="25000" data-suffix="+">0</strong><span>Happy travellers</span></div>
+<div class="stat"><strong data-count="120" data-suffix="+">0</strong><span>Destinations</span></div>
+<div class="stat"><strong data-count="4.8" data-decimals="1">0</strong><span>Average rating</span></div>
+</div>
+</div>
+</div>
+<div class="steps">
+<span class="kicker">Start to finish</span>
+<h2 style="margin-bottom:34px;">How a trip with us actually comes together</h2>
+<div class="steps-list">
+<div class="step"><span class="num">01</span><h4>Tell us your dates</h4><p>Share where you want to go, when, and who's coming along.</p></div>
+<div class="step"><span class="num">02</span><h4>We shape the itinerary</h4><p>A planner builds a day-by-day plan around your budget and pace.</p></div>
+<div class="step"><span class="num">03</span><h4>Review and confirm</h4><p>Adjust anything you like, then lock it in with a secure payment.</p></div>
+<div class="step"><span class="num">04</span><h4>Travel, we stay on call</h4><p>Local support at every stop for as long as the trip runs.</p></div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="py-sect band-sand" id="destinations">
+<div class="wrap">
+<div class="section-head">
+<span class="kicker">Where you'll go next</span>
+<h2>Destinations we know like home</h2>
+<p class="lead">A shortlist of the places we send travellers most often — each one covered by guides and stays we've vetted ourselves.</p>
+</div>
+<div class="dest-grid">
+<div class="dest-card"><img src="https://picsum.photos/seed/brotherssrajasthan/420/500" alt="Rajasthan fort at sunset"><span class="price">From ₹18,999</span><div class="overlay"></div><div class="info"><span class="tag">Forts & Palaces</span><h3>Rajasthan</h3><p>Sandstone forts, painted havelis and desert dunes outside Jaisalmer.</p></div></div>
+<div class="dest-card"><img src="https://picsum.photos/seed/brothersskerala/420/500" alt="Kerala backwaters"><span class="price">From ₹24,499</span><div class="overlay"></div><div class="info"><span class="tag">Backwaters & Hills</span><h3>Kerala</h3><p>Houseboats through Alleppey and tea slopes around Munnar.</p></div></div>
+<div class="dest-card"><img src="https://picsum.photos/seed/brotherssgoa/420/500" alt="Goa beach"><span class="price">From ₹15,499</span><div class="overlay"></div><div class="info"><span class="tag">Coast & Nightlife</span><h3>Goa</h3><p>Quiet south-Goa shacks by day, north-Goa energy after dark.</p></div></div>
+<div class="dest-card"><img src="https://picsum.photos/seed/brothersshimachal/420/500" alt="Himachal valley"><span class="price">From ₹19,999</span><div class="overlay"></div><div class="info"><span class="tag">Valleys & Passes</span><h3>Himachal Pradesh</h3><p>Manali's mountain roads and the quieter valleys around Kasol.</p></div></div>
+<div class="dest-card"><img src="https://picsum.photos/seed/brothersskashmir/420/500" alt="Kashmir lake"><span class="price">From ₹27,999</span><div class="overlay"></div><div class="info"><span class="tag">Alpine Lakes</span><h3>Kashmir</h3><p>Houseboats on Dal Lake and snow slopes above Gulmarg.</p></div></div>
+<div class="dest-card"><img src="https://picsum.photos/seed/brotherssuttarakhand/420/500" alt="Himalayan peaks"><span class="price">From ₹21,499</span><div class="overlay"></div><div class="info"><span class="tag">Char Dham & Himalayas</span><h3>Uttarakhand</h3><p>Pilgrim towns, river rafting in Rishikesh and Himalayan viewpoints.</p></div></div>
+<div class="dest-card"><img src="https://picsum.photos/seed/brotherssandaman/420/500" alt="Andaman coastline"><span class="price">From ₹29,999</span><div class="overlay"></div><div class="info"><span class="tag">Coral & Coastline</span><h3>Andaman Islands</h3><p>Reef diving off Havelock and quiet beaches on Neil Island.</p></div></div>
+<div class="dest-card"><img src="https://picsum.photos/seed/brothersstamilnadu/420/500" alt="Tamil Nadu temple"><span class="price">From ₹17,999</span><div class="overlay"></div><div class="info"><span class="tag">Temples & Coast</span><h3>Tamil Nadu</h3><p>Temple towns like Madurai paired with the Kanyakumari coastline.</p></div></div>
+</div>
+</div>
+</section>
+
+<section class="py-sect" id="packages">
+<div class="wrap">
+<div class="section-head">
+<span class="kicker">Handpicked itineraries</span>
+<h2>Tour packages for every kind of traveller</h2>
+<p class="lead">Every package below is a starting point — swap hotels, add days, or fold two together and we'll requote it.</p>
+</div>
+<div class="filters">
+<button class="active" data-filter="all">All packages</button>
+<button data-filter="heritage">Heritage</button>
+<button data-filter="nature">Nature</button>
+<button data-filter="beach">Beach</button>
+<button data-filter="mountains">Mountains</button>
+<button data-filter="islands">Islands</button>
+</div>
+<div class="pkg-grid" id="pkgGrid">
+
+<div class="pkg-card" data-category="heritage">
+<div class="pkg-img"><img src="https://picsum.photos/seed/brotherssgoldentriangle/440/260" alt="Taj Mahal at sunrise"><span class="cat">Heritage</span></div>
+<div class="pkg-body">
+<h3>Golden Triangle Classic</h3>
+<p class="pkg-route">Delhi · Agra · Jaipur</p>
+<div class="ticket-cut"></div>
+<div class="pkg-meta"><span><i class="fa-regular fa-clock"></i> 6D / 5N</span><span><i class="fa-solid fa-star"></i> 4.7 (312)</span></div>
+<div class="pkg-foot">
+<div class="pkg-price"><strong>₹18,999</strong><span>per person</span></div>
+<button class="pkg-book" data-pkg="Golden Triangle Classic">Enquire now</button>
+</div>
+</div>
+</div>
+
+<div class="pkg-card" data-category="nature">
+<div class="pkg-img"><img src="https://picsum.photos/seed/brotherssbackwater/440/260" alt="Kerala houseboat"><span class="cat">Nature</span></div>
+<div class="pkg-body">
+<h3>Kerala Backwater Escape</h3>
+<p class="pkg-route">Kochi · Munnar · Alleppey</p>
+<div class="ticket-cut"></div>
+<div class="pkg-meta"><span><i class="fa-regular fa-clock"></i> 7D / 6N</span><span><i class="fa-solid fa-star"></i> 4.8 (268)</span></div>
+<div class="pkg-foot">
+<div class="pkg-price"><strong>₹24,499</strong><span>per person</span></div>
+<button class="pkg-book" data-pkg="Kerala Backwater Escape">Enquire now</button>
+</div>
+</div>
+</div>
+
+<div class="pkg-card" data-category="heritage">
+<div class="pkg-img"><img src="https://picsum.photos/seed/brotherssroyalrajasthan/440/260" alt="Udaipur palace"><span class="cat">Heritage</span></div>
+<div class="pkg-body">
+<h3>Royal Rajasthan Trail</h3>
+<p class="pkg-route">Jaipur · Jodhpur · Udaipur · Jaisalmer</p>
+<div class="ticket-cut"></div>
+<div class="pkg-meta"><span><i class="fa-regular fa-clock"></i> 8D / 7N</span><span><i class="fa-solid fa-star"></i> 4.9 (401)</span></div>
+<div class="pkg-foot">
+<div class="pkg-price"><strong>₹32,999</strong><span>per person</span></div>
+<button class="pkg-book" data-pkg="Royal Rajasthan Trail">Enquire now</button>
+</div>
+</div>
+</div>
+
+<div class="pkg-card" data-category="beach">
+<div class="pkg-img"><img src="https://picsum.photos/seed/brotherssgoaretreat/440/260" alt="Goa beach shack"><span class="cat">Beach</span></div>
+<div class="pkg-body">
+<h3>Goa Beach Retreat</h3>
+<p class="pkg-route">North Goa · South Goa</p>
+<div class="ticket-cut"></div>
+<div class="pkg-meta"><span><i class="fa-regular fa-clock"></i> 5D / 4N</span><span><i class="fa-solid fa-star"></i> 4.6 (219)</span></div>
+<div class="pkg-foot">
+<div class="pkg-price"><strong>₹15,499</strong><span>per person</span></div>
+<button class="pkg-book" data-pkg="Goa Beach Retreat">Enquire now</button>
+</div>
+</div>
+</div>
+
+<div class="pkg-card" data-category="mountains">
+<div class="pkg-img"><img src="https://picsum.photos/seed/brothersskashmirparadise/440/260" alt="Gulmarg snow"><span class="cat">Mountains</span></div>
+<div class="pkg-body">
+<h3>Kashmir Paradise</h3>
+<p class="pkg-route">Srinagar · Gulmarg · Pahalgam</p>
+<div class="ticket-cut"></div>
+<div class="pkg-meta"><span><i class="fa-regular fa-clock"></i> 6D / 5N</span><span><i class="fa-solid fa-star"></i> 4.8 (176)</span></div>
+<div class="pkg-foot">
+<div class="pkg-price"><strong>₹27,999</strong><span>per person</span></div>
+<button class="pkg-book" data-pkg="Kashmir Paradise">Enquire now</button>
+</div>
+</div>
+</div>
+
+<div class="pkg-card" data-category="islands">
+<div class="pkg-img"><img src="https://picsum.photos/seed/brotherssandamanbliss/440/260" alt="Havelock island beach"><span class="cat">Islands</span></div>
+<div class="pkg-body">
+<h3>Andaman Island Bliss</h3>
+<p class="pkg-route">Port Blair · Havelock · Neil Island</p>
+<div class="ticket-cut"></div>
+<div class="pkg-meta"><span><i class="fa-regular fa-clock"></i> 6D / 5N</span><span><i class="fa-solid fa-star"></i> 4.9 (154)</span></div>
+<div class="pkg-foot">
+<div class="pkg-price"><strong>₹29,999</strong><span>per person</span></div>
+<button class="pkg-book" data-pkg="Andaman Island Bliss">Enquire now</button>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<section class="py-sect band-navy" id="why-us">
+<div class="wrap why-grid">
+<div class="why-intro">
+<span class="kicker">Why travel with us</span>
+<h2>The details we sweat so you don't have to</h2>
+<p>None of this is unique to us on paper. What's different is that a real planner checks each one before your trip starts, not an algorithm.</p>
+<a href="#contact" class="btn-outline-light" style="margin-top:26px;"><i class="fa-regular fa-comment-dots"></i>Ask us anything</a>
+</div>
+<div class="why-list">
+<div class="why-item"><i class="fa-solid fa-tag"></i><div><h4>Best price guarantee</h4><p>Find the same package cheaper elsewhere and we'll match it.</p></div></div>
+<div class="why-item"><i class="fa-solid fa-bed"></i><div><h4>Handpicked stays</h4><p>Every hotel on our list has been visited by someone on our team.</p></div></div>
+<div class="why-item"><i class="fa-solid fa-user-tie"></i><div><h4>Local expert guides</h4><p>Guides who live in the region, not a rotating call centre.</p></div></div>
+<div class="why-item"><i class="fa-solid fa-headset"></i><div><h4>Support round the clock</h4><p>One number to call if a flight shifts or plans change mid-trip.</p></div></div>
+<div class="why-item"><i class="fa-solid fa-route"></i><div><h4>Flexible itineraries</h4><p>Add a day, drop a stop, swap a hotel — before or during the trip.</p></div></div>
+<div class="why-item"><i class="fa-solid fa-lock"></i><div><h4>Secure, simple payments</h4><p>Pay in parts, get receipts for every rupee, no hidden add-ons.</p></div></div>
+</div>
+</div>
+</section>
+
+<section class="py-sect" id="gallery">
+<div class="wrap">
+<div class="section-head">
+<span class="kicker">Moments from the road</span>
+<h2>A look at the trips we've run</h2>
+<p class="lead">A few frames from recent groups — click any tile for a closer look.</p>
+</div>
+<div class="gallery-grid">
+<div class="g-item g1" data-cap="Sunrise over Jaisalmer Fort" data-img="https://picsum.photos/seed/brotherssgallery1/900/700"><img src="https://picsum.photos/seed/brotherssgallery1/900/700" alt="Jaisalmer Fort sunrise"><span class="zoom"><i class="fa-solid fa-magnifying-glass"></i></span><span class="cap">Sunrise over Jaisalmer Fort</span></div>
+<div class="g-item g2" data-cap="Houseboat evenings near Alleppey" data-img="https://picsum.photos/seed/brotherssgallery2/700/700"><img src="https://picsum.photos/seed/brotherssgallery2/700/700" alt="Alleppey houseboat"><span class="zoom"><i class="fa-solid fa-magnifying-glass"></i></span><span class="cap">Houseboat evenings, Alleppey</span></div>
+<div class="g-item g5" data-cap="Snow slopes above Gulmarg" data-img="https://picsum.photos/seed/brotherssgallery3/700/1000"><img src="https://picsum.photos/seed/brotherssgallery3/700/1000" alt="Gulmarg snow"><span class="zoom"><i class="fa-solid fa-magnifying-glass"></i></span><span class="cap">Snow slopes above Gulmarg</span></div>
+<div class="g-item g2" data-cap="Baga Beach at low tide" data-img="https://picsum.photos/seed/brotherssgallery4/700/700"><img src="https://picsum.photos/seed/brotherssgallery4/700/700" alt="Baga Beach"><span class="zoom"><i class="fa-solid fa-magnifying-glass"></i></span><span class="cap">Baga Beach, Goa</span></div>
+<div class="g-item g2" data-cap="Blue lanes of Jodhpur" data-img="https://picsum.photos/seed/brotherssgallery5/700/700"><img src="https://picsum.photos/seed/brotherssgallery5/700/700" alt="Jodhpur streets"><span class="zoom"><i class="fa-solid fa-magnifying-glass"></i></span><span class="cap">The blue lanes of Jodhpur</span></div>
+<div class="g-item g2" data-cap="Havelock's east coast at dusk" data-img="https://picsum.photos/seed/brotherssgallery6/700/700"><img src="https://picsum.photos/seed/brotherssgallery6/700/700" alt="Havelock Island"><span class="zoom"><i class="fa-solid fa-magnifying-glass"></i></span><span class="cap">Havelock's east coast, dusk</span></div>
+</div>
+</div>
+</section>
+
+<section class="py-sect band-navy" id="testimonials">
+<div class="wrap">
+<div class="testi-wrap">
+<span class="testi-quote">"</span>
+<div id="testiSlides">
+<div class="testi-slide active">
+<p class="testi-text">Our Rajasthan trip was planned around my parents' pace, not a fixed group schedule. Small thing, but it made the whole week easier.</p>
+<div class="testi-person"><img src="https://i.pravatar.cc/100?img=12" alt="Traveller"><div><strong>Ananya Sharma</strong><span>Pune</span><div class="testi-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div></div></div>
+</div>
+<div class="testi-slide">
+<p class="testi-text">We changed our Kerala dates twice because of work and nobody made it feel like a hassle. The houseboat they booked was better than the photos.</p>
+<div class="testi-person"><img src="https://i.pravatar.cc/100?img=32" alt="Traveller"><div><strong>Rohit Verma</strong><span>Bengaluru</span><div class="testi-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></div></div></div>
+</div>
+<div class="testi-slide">
+<p class="testi-text">Booked Kashmir on short notice for our anniversary. They found us a lake-facing houseboat within two days and kept checking in the whole trip.</p>
+<div class="testi-person"><img src="https://i.pravatar.cc/100?img=45" alt="Traveller"><div><strong>Priya & Karan Mehta</strong><span>Noida</span><div class="testi-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div></div></div>
+</div>
+<div class="testi-slide">
+<p class="testi-text">First time travelling with elderly parents and I was nervous about it. The guide in Jaipur was patient and paced everything around them.</p>
+<div class="testi-person"><img src="https://i.pravatar.cc/100?img=68" alt="Traveller"><div><strong>Devansh Iyer</strong><span>Chennai</span><div class="testi-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div></div></div>
+</div>
+</div>
+<div class="testi-nav">
+<button id="testiPrev"><i class="fa-solid fa-arrow-left"></i></button>
+<div class="testi-dots" id="testiDots"></div>
+<button id="testiNext"><i class="fa-solid fa-arrow-right"></i></button>
+</div>
+</div>
+</div>
+</section>
+
+<section class="py-sect band-sand" id="blog">
+<div class="wrap">
+<div class="section-head">
+<span class="kicker">Travel notes</span>
+<h2>Read before you pack</h2>
+<p class="lead">Short, practical notes from our planners — the things people usually ask us the week before they fly out.</p>
+</div>
+<div class="blog-grid">
+<div class="blog-card">
+<div class="blog-img"><img src="https://picsum.photos/seed/brotherssblog1/440/300" alt="Kerala backwaters"></div>
+<div class="blog-body">
+<span class="blog-tag">Kerala</span>
+<h3>Seven reasons the backwaters deserve more than a day trip</h3>
+<p class="blog-date">March 2, 2026</p>
+<p class="blog-excerpt">Most itineraries treat Alleppey as a quick stop between Kochi and Munnar. Here's why an overnight houseboat changes the whole trip.</p>
+<button class="blog-more" data-blog="0">Read the full note</button>
+</div>
+</div>
+<div class="blog-card">
+<div class="blog-img"><img src="https://picsum.photos/seed/brotherssblog2/440/300" alt="Rajasthan fort"></div>
+<div class="blog-body">
+<span class="blog-tag">Rajasthan</span>
+<h3>A first-timer's guide to the desert forts</h3>
+<p class="blog-date">February 14, 2026</p>
+<p class="blog-excerpt">Jaisalmer, Jodhpur and Jaipur each feel different once you know what to look for. A short primer before your first Rajasthan trip.</p>
+<button class="blog-more" data-blog="1">Read the full note</button>
+</div>
+</div>
+<div class="blog-card">
+<div class="blog-img"><img src="https://picsum.photos/seed/brotherssblog3/440/300" alt="Kashmir valley"></div>
+<div class="blog-body">
+<span class="blog-tag">Kashmir</span>
+<h3>Best time to visit Kashmir, season by season</h3>
+<p class="blog-date">January 28, 2026</p>
+<p class="blog-excerpt">Snow, tulips or sunny valley walks — Kashmir looks completely different depending on the month you go. Here's how we plan around it.</p>
+<button class="blog-more" data-blog="2">Read the full note</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="py-sect" id="faq">
+<div class="wrap faq-grid">
+<div class="faq-side">
+<span class="kicker">Good to know</span>
+<h2>Questions we hear most</h2>
+<p>Can't find what you're after? Send us a message and a planner will answer within a day.</p>
+<a href="#contact" class="btn-outline-navy" style="margin-top:24px;"><i class="fa-regular fa-comment-dots"></i>Ask a planner</a>
+</div>
+<div class="accordion" id="faqAccordion">
+<div class="accordion-item">
+<h3 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">How far ahead should I book?</button></h3>
+<div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion"><div class="accordion-body">For domestic trips, three to four weeks ahead is comfortable. International packages and peak-season dates like Diwali or Christmas week are best locked in six to eight weeks out.</div></div>
+</div>
+<div class="accordion-item">
+<h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">Can I customise a package?</button></h3>
+<div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Yes, every package on this site is a starting template. Add extra nights, change hotel categories, or combine two destinations and we'll send a revised quote.</div></div>
+</div>
+<div class="accordion-item">
+<h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">What's your cancellation policy?</button></h3>
+<div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Full refund up to 15 days before departure, 50% between 7 and 15 days, and hotel-dependent after that. We share the exact terms for your dates before you pay.</div></div>
+</div>
+<div class="accordion-item">
+<h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">Do you offer group or corporate rates?</button></h3>
+<div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Groups of eight or more and corporate offsites get a separate quote with adjusted per-person pricing. Mention your group size in the contact form and we'll follow up directly.</div></div>
+</div>
+<div class="accordion-item">
+<h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">Do you help with visas for international trips?</button></h3>
+<div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">We prepare your document checklist and review your application before submission. The visa fee and embassy appointment are handled directly by you, since requirements vary by nationality.</div></div>
+</div>
+<div class="accordion-item">
+<h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6">Is travel insurance included?</button></h3>
+<div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">It's not bundled by default so you're not paying for cover you don't need, but we can add a policy to any package on request.</div></div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="py-sect band-navy" id="contact">
+<div class="wrap contact-grid">
+<div class="contact-card">
+<span class="kicker">Let's plan it</span>
+<h2 style="margin-bottom:8px;">Start with a quick message</h2>
+<p style="color:var(--muted);margin-bottom:22px;font-size:.94rem;">Fill this in and a planner will call or email within one working day.</p>
+<div id="formSuccess"><i class="fa-solid fa-circle-check"></i> Thanks — your enquiry has reached us. We'll be in touch shortly.</div>
+<form id="contactForm" novalidate>
+<div class="field-row">
+<div class="fld"><label for="cName">Full name</label><input type="text" id="cName" required></div>
+<div class="fld"><label for="cEmail">Email</label><input type="email" id="cEmail" required></div>
+</div>
+<div class="field-row">
+<div class="fld"><label for="cPhone">Phone</label><input type="tel" id="cPhone" required></div>
+<div class="fld"><label for="cDest">Interested in</label>
+<select id="cDest">
+<option>Rajasthan</option><option>Kerala</option><option>Goa</option><option>Himachal Pradesh</option><option>Kashmir</option><option>Uttarakhand</option><option>Andaman Islands</option><option>Tamil Nadu</option><option>Not sure yet</option>
+</select>
+</div>
+</div>
+<div class="fld"><label for="cMsg">Message</label><textarea id="cMsg" placeholder="Dates, number of travellers, anything else we should know"></textarea></div>
+<button type="submit" class="btn-mgd" style="border:none;width:100%;justify-content:center;"><i class="fa-solid fa-paper-plane"></i>Send message</button>
+</form>
+</div>
+<div>
+<span class="kicker">Reach us directly</span>
+<h2 style="color:var(--white);">Prefer to just call?</h2>
+<ul class="info-list">
+<li><i class="fa-solid fa-location-dot"></i><div><strong>Office</strong>Tower B, Sector 62, Noida, Uttar Pradesh 201301, India</div></li>
+<li><i class="fa-solid fa-phone"></i><div><strong>Phone</strong>+91 98765 43210</div></li>
+<li><i class="fa-solid fa-envelope"></i><div><strong>Email</strong>hello@brothersstravels.com</div></li>
+<li><i class="fa-regular fa-clock"></i><div><strong>Hours</strong>Monday to Saturday, 9:30am – 7:30pm IST</div></li>
+</ul>
+<div class="map-frame">
+<iframe src="https://www.google.com/maps?q=Sector%2062,%20Noida,%20Uttar%20Pradesh,%20India&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+</div>
+</div>
+</section>
+
+<footer>
+<div class="wrap">
+<div class="foot-grid">
+<div class="foot-brand">
+<a href="#home" class="brand"><i class="fa-solid fa-compass"></i>Brotherss Travels</a>
+<p>Holiday packages across India and beyond, planned by a small team that answers the phone.</p>
+<div class="foot-social">
+<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+<a href="#"><i class="fa-brands fa-instagram"></i></a>
+<a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+<a href="#"><i class="fa-brands fa-youtube"></i></a>
+</div>
+</div>
+<div>
+<h4>Explore</h4>
+<ul class="foot-links">
+<li><a href="#about">About us</a></li>
+<li><a href="#destinations">Destinations</a></li>
+<li><a href="#packages">Packages</a></li>
+<li><a href="#testimonials">Traveller reviews</a></li>
+<li><a href="#blog">Travel notes</a></li>
+</ul>
+</div>
+<div>
+<h4>Popular trips</h4>
+<ul class="foot-links">
+<li><a href="#packages">Golden Triangle Classic</a></li>
+<li><a href="#packages">Kerala Backwater Escape</a></li>
+<li><a href="#packages">Royal Rajasthan Trail</a></li>
+<li><a href="#packages">Kashmir Paradise</a></li>
+<li><a href="#packages">Andaman Island Bliss</a></li>
+</ul>
+</div>
+<div class="foot-news">
+<h4>Stay in the loop</h4>
+<p>One short email a month with new routes and off-season prices.</p>
+<form class="news-form" id="newsForm">
+<input type="email" placeholder="Your email" required>
+<button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+</form>
+<p id="newsMsg">Subscribed — welcome aboard.</p>
+</div>
+</div>
+<div class="foot-bottom">
+<span>© <span id="year"></span> Brotherss Travels. All rights reserved.</span>
+<span>Privacy Policy · Terms of Service</span>
+</div>
+</div>
+</footer>
+
+<button id="backToTop"><i class="fa-solid fa-arrow-up"></i></button>
+
+<div class="modal fade" id="galleryModal" tabindex="-1">
+<div class="modal-dialog modal-dialog-centered modal-lg">
+<div class="modal-content" style="background:var(--navy);border:none;border-radius:16px;overflow:hidden;">
+<button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" style="position:absolute;top:16px;right:16px;z-index:5;"></button>
+<img id="modalImg" src="" alt="" style="width:100%;max-height:70vh;object-fit:cover;">
+<div style="padding:20px 24px;color:var(--white);font-family:var(--font-d);font-size:1.1rem;" id="modalCap"></div>
+</div>
+</div>
+</div>
+
+<div class="modal fade" id="blogModal" tabindex="-1">
+<div class="modal-dialog modal-dialog-centered modal-lg">
+<div class="modal-content" style="border-radius:16px;">
+<div class="modal-header" style="border-bottom:1px solid var(--line);">
+<h3 class="modal-title" id="blogModalTitle" style="font-size:1.3rem;"></h3>
+<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+</div>
+<div class="modal-body" id="blogModalBody" style="color:var(--muted);font-size:.98rem;line-height:1.75;"></div>
+</div>
+</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+document.getElementById('year').textContent=new Date().getFullYear();
+
+window.addEventListener('load',function(){
+document.getElementById('preloader').classList.add('done');
+});
+
+var mainNav=document.getElementById('mainNav');
+window.addEventListener('scroll',function(){
+if(window.scrollY>40){mainNav.classList.add('scrolled');}else{mainNav.classList.remove('scrolled');}
+var backBtn=document.getElementById('backToTop');
+if(window.scrollY>500){backBtn.classList.add('show');}else{backBtn.classList.remove('show');}
+});
+
+document.getElementById('backToTop').addEventListener('click',function(){
+window.scrollTo({top:0,behavior:'smooth'});
+});
+
+var menuOpen=document.getElementById('menuOpen');
+var menuClose=document.getElementById('menuClose');
+var mobileMenu=document.getElementById('mobileMenu');
+var menuOverlay=document.getElementById('menuOverlay');
+function openMenu(){mobileMenu.classList.add('open');menuOverlay.classList.add('open');}
+function closeMenu(){mobileMenu.classList.remove('open');menuOverlay.classList.remove('open');}
+menuOpen.addEventListener('click',openMenu);
+menuClose.addEventListener('click',closeMenu);
+menuOverlay.addEventListener('click',closeMenu);
+document.querySelectorAll('#mobileMenu a').forEach(function(a){
+a.addEventListener('click',closeMenu);
+});
+
+var navAnchors=document.querySelectorAll('.nav-links a[href^="#"]');
+var sections=[];
+navAnchors.forEach(function(a){
+var id=a.getAttribute('href').slice(1);
+var el=document.getElementById(id);
+if(el){sections.push({id:id,el:el,link:a});}
+});
+var observer=new IntersectionObserver(function(entries){
+entries.forEach(function(entry){
+var match=sections.find(function(s){return s.el===entry.target;});
+if(match&&entry.isIntersecting){
+navAnchors.forEach(function(a){a.classList.remove('active');});
+match.link.classList.add('active');
+}
+});
+},{rootMargin:'-45% 0px -50% 0px'});
+sections.forEach(function(s){observer.observe(s.el);});
+
+function animateCounter(el){
+var target=parseFloat(el.getAttribute('data-count'));
+var decimals=parseInt(el.getAttribute('data-decimals')||'0');
+var suffix=el.getAttribute('data-suffix')||'';
+var current=0;
+var duration=1400;
+var startTime=null;
+function step(ts){
+if(!startTime)startTime=ts;
+var progress=Math.min((ts-startTime)/duration,1);
+current=target*progress;
+el.textContent=current.toFixed(decimals)+suffix;
+if(progress<1){requestAnimationFrame(step);}else{el.textContent=target.toFixed(decimals)+suffix;}
+}
+requestAnimationFrame(step);
+}
+var counters=document.querySelectorAll('[data-count]');
+var counterObserver=new IntersectionObserver(function(entries,obs){
+entries.forEach(function(entry){
+if(entry.isIntersecting){
+animateCounter(entry.target);
+obs.unobserve(entry.target);
+}
+});
+},{threshold:0.5});
+counters.forEach(function(c){counterObserver.observe(c);});
+
+var filterButtons=document.querySelectorAll('.filters button');
+var pkgCards=document.querySelectorAll('.pkg-card');
+filterButtons.forEach(function(btn){
+btn.addEventListener('click',function(){
+filterButtons.forEach(function(b){b.classList.remove('active');});
+btn.classList.add('active');
+var filter=btn.getAttribute('data-filter');
+pkgCards.forEach(function(card){
+if(filter==='all'||card.getAttribute('data-category')===filter){
+card.classList.remove('is-hidden');
+}else{
+card.classList.add('is-hidden');
+}
+});
+});
+});
+
+var galleryModalEl=document.getElementById('galleryModal');
+var galleryModal=new bootstrap.Modal(galleryModalEl);
+document.querySelectorAll('.g-item').forEach(function(item){
+item.addEventListener('click',function(){
+document.getElementById('modalImg').src=item.getAttribute('data-img');
+document.getElementById('modalCap').textContent=item.getAttribute('data-cap');
+galleryModal.show();
+});
+});
+
+var blogContent=[
+{title:"Seven reasons the backwaters deserve more than a day trip",body:"Most first-time visitors to Kerala treat Alleppey as a photo stop between Kochi and Munnar, and end up seeing the backwaters from a moving car window instead of the water itself. An overnight houseboat changes that completely. Once the day-trip boats head back to the jetty by evening, the canals empty out and the pace of the villages along the banks becomes the main event, not the scenery rushing past. You get to watch fishing nets go out at dawn, share a meal cooked on board, and fall asleep to water lapping against the hull instead of hotel air conditioning. We build every Kerala package with at least one overnight stay on the water, and it is consistently the part travellers mention first when they get back."},
+{title:"A first-timer's guide to the desert forts",body:"Jaisalmer, Jodhpur and Jaipur are often lumped together as 'the Rajasthan forts,' but each one rewards a different kind of visit. Jaisalmer's fort is a living town — families still live inside its walls, so mornings there feel domestic rather than monumental. Jodhpur's Mehrangarh sits high above the blue city and is best seen from the ramparts at golden hour, camera in hand. Jaipur's Amber Fort works well as a half-day trip paired with the City Palace, since the pink city itself has plenty else to see. If you're short on time, we usually recommend picking two of the three rather than rushing all of them into one week."},
+{title:"Best time to visit Kashmir, season by season",body:"Kashmir genuinely looks like three different places depending on when you go. March through May brings tulip season in Srinagar and mild valley weather, ideal if you want gardens and houseboats without snow. June to August is peak season for Pahalgam and Gulmarg's green meadows, popular with families travelling during school holidays. December to February turns Gulmarg into a snow destination with skiing and sledging, though some higher passes close. We plan the itinerary structure differently for each window, since a Gulmarg day trip in July looks nothing like one in January."}
+];
+var blogModalEl=document.getElementById('blogModal');
+var blogModal=new bootstrap.Modal(blogModalEl);
+document.querySelectorAll('.blog-more').forEach(function(btn){
+btn.addEventListener('click',function(){
+var idx=parseInt(btn.getAttribute('data-blog'));
+var entry=blogContent[idx];
+document.getElementById('blogModalTitle').textContent=entry.title;
+document.getElementById('blogModalBody').textContent=entry.body;
+blogModal.show();
+});
+});
+
+var slides=document.querySelectorAll('.testi-slide');
+var dotsWrap=document.getElementById('testiDots');
+var currentSlide=0;
+slides.forEach(function(s,i){
+var dot=document.createElement('button');
+if(i===0)dot.classList.add('active');
+dot.addEventListener('click',function(){goToSlide(i);});
+dotsWrap.appendChild(dot);
+});
+var dots=dotsWrap.querySelectorAll('button');
+function goToSlide(i){
+slides[currentSlide].classList.remove('active');
+dots[currentSlide].classList.remove('active');
+currentSlide=(i+slides.length)%slides.length;
+slides[currentSlide].classList.add('active');
+dots[currentSlide].classList.add('active');
+}
+document.getElementById('testiNext').addEventListener('click',function(){goToSlide(currentSlide+1);});
+document.getElementById('testiPrev').addEventListener('click',function(){goToSlide(currentSlide-1);});
+var testiTimer=setInterval(function(){goToSlide(currentSlide+1);},6000);
+var testiWrap=document.querySelector('.testi-wrap');
+testiWrap.addEventListener('mouseenter',function(){clearInterval(testiTimer);});
+testiWrap.addEventListener('mouseleave',function(){testiTimer=setInterval(function(){goToSlide(currentSlide+1);},6000);});
+
+document.getElementById('heroForm').addEventListener('submit',function(e){
+e.preventDefault();
+var dest=document.getElementById('heroDest').value;
+var guests=document.getElementById('heroGuests').value;
+if(dest){document.getElementById('cDest').value=dest;}
+document.getElementById('cMsg').value='Interested in '+(dest||'a package')+' for '+guests+' traveller(s).';
+document.getElementById('contact').scrollIntoView({behavior:'smooth'});
+document.getElementById('cName').focus();
+});
+
+var contactForm=document.getElementById('contactForm');
+contactForm.addEventListener('submit',function(e){
+e.preventDefault();
+var name=document.getElementById('cName');
+var email=document.getElementById('cEmail');
+var phone=document.getElementById('cPhone');
+var valid=true;
+[name,email,phone].forEach(function(f){f.classList.remove('invalid');});
+if(name.value.trim().length<2){name.classList.add('invalid');valid=false;}
+var emailPattern=/^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+if(!emailPattern.test(email.value.trim())){email.classList.add('invalid');valid=false;}
+if(phone.value.replace(/\D/g,'').length<10){phone.classList.add('invalid');valid=false;}
+if(!valid)return;
+document.getElementById('formSuccess').classList.add('show');
+contactForm.reset();
+setTimeout(function(){document.getElementById('formSuccess').classList.remove('show');},6000);
+});
+
+document.getElementById('newsForm').addEventListener('submit',function(e){
+e.preventDefault();
+document.getElementById('newsMsg').style.display='block';
+this.reset();
+});
+
+document.querySelectorAll('.pkg-book').forEach(function(btn){
+btn.addEventListener('click',function(){
+var pkgName=btn.getAttribute('data-pkg');
+document.getElementById('cDest').value='Not sure yet';
+document.getElementById('cMsg').value='I would like a quote for the '+pkgName+' package.';
+document.getElementById('contact').scrollIntoView({behavior:'smooth'});
+document.getElementById('cName').focus();
+});
+});
+</script>
+</body>
+</html>
